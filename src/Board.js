@@ -6,6 +6,7 @@ const container = {
 };
 
 const flexWrapper = {
+  cursor: "poiner",
   display: "flex",
   width: "600px",
   height: "600px",
@@ -13,6 +14,7 @@ const flexWrapper = {
   alignItems: "center"
 };
 const squareCSS = {
+  cursor: "pointer",
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
@@ -67,7 +69,10 @@ export default class Hello extends Component {
       (playerChoice[2] === X &&
         playerChoice[5] === X &&
         playerChoice[8] === X) ||
-      (playerChoice[0] === X && playerChoice[4] === X && playerChoice[8] === X)
+      (playerChoice[0] === X &&
+        playerChoice[4] === X &&
+        playerChoice[8] === X) ||
+      (playerChoice[2] === X && playerChoice[4] === X && playerChoice[6] === X)
     ) {
       return true;
     }
